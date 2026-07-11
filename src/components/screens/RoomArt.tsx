@@ -1,10 +1,12 @@
 import type { LucideIcon } from "lucide-react";
 import { Sofa } from "lucide-react";
 
+export type RoomArtTone = "warm" | "cool" | "dark";
+
 interface RoomArtProps {
   icon?: LucideIcon;
   className?: string;
-  tone?: "warm" | "cool" | "dark";
+  tone?: RoomArtTone;
 }
 
 const tones = {

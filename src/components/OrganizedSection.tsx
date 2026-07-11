@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
-import ListingsScreen from "./screens/ListingsScreen";
+import ScreenshotImage from "./screens/ScreenshotImage";
 import { fadeUp, slideInRight, staggerContainer } from "@/lib/motion";
 
 const bullets = [
@@ -65,7 +65,10 @@ export default function OrganizedSection() {
             className="mx-auto"
           >
             <PhoneMockup className="shadow-2xl">
-              <ListingsScreen />
+              <ScreenshotImage
+                src="/screenshots/my-listings.jpg"
+                alt="Toodls My Listings screen with folders for Living Room, Garage sale, and Unfiled items"
+              />
             </PhoneMockup>
           </motion.div>
         </div>

@@ -1,11 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Camera, CircleDollarSign, PackageCheck, Rocket } from "lucide-react";
+import {
+  Camera,
+  CircleDollarSign,
+  PackageCheck,
+  Rocket,
+  Sparkles,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
-import ScanScreen from "./screens/ScanScreen";
-import ScanResultScreen from "./screens/ScanResultScreen";
+import ScreenshotImage from "./screens/ScreenshotImage";
 import ExportScreen from "./screens/ExportScreen";
 import { fadeUp, slideInLeft, slideInRight } from "@/lib/motion";
 
@@ -19,22 +24,51 @@ interface Step {
 const steps: Step[] = [
   {
     icon: Camera,
-    title: "Scan Unused Items",
-    description: "Point your camera at any item in your home.",
-    screen: <ScanScreen />,
+    title: "Capture Every Angle",
+    description:
+      "Snap a few photos so our AI can see every detail — not just the front.",
+    screen: (
+      <ScreenshotImage
+        src="/screenshots/scan-closeup.jpg"
+        alt="Toodls camera screen capturing a close-up angle of a chair"
+        priority
+      />
+    ),
+  },
+  {
+    icon: Sparkles,
+    title: "AI Analyzes Instantly",
+    description:
+      "Toodls identifies the item and pulls real market comps in seconds.",
+    screen: (
+      <ScreenshotImage
+        src="/screenshots/analyzing.jpg"
+        alt="Toodls analyzing photos to identify and price an item"
+      />
+    ),
   },
   {
     icon: CircleDollarSign,
     title: "Know What It's Worth",
     description:
-      "Instantly discover resale value, suggested pricing, and demand.",
-    screen: <ScanResultScreen />,
+      "See suggested pricing backed by real eBay listings — not guesses.",
+    screen: (
+      <ScreenshotImage
+        src="/screenshots/scan-result.jpg"
+        alt="Toodls scan result showing suggested price and similar eBay listings"
+      />
+    ),
   },
   {
     icon: PackageCheck,
     title: "Keep · Sell · Donate",
     description: "AI helps you decide the best next step.",
-    screen: <ScanResultScreen />,
+    screen: (
+      <ScreenshotImage
+        src="/screenshots/scan-result.jpg"
+        alt="Toodls scan result with Sell, Donate, and Keep options"
+      />
+    ),
   },
   {
     icon: Rocket,
@@ -59,7 +93,7 @@ export default function HowItWorks() {
             How Toodls Works
           </h2>
           <p className="mt-4 text-lg text-black/60">
-            From forgotten closet to cash in four simple steps.
+            From forgotten closet to cash in five simple steps.
           </p>
         </motion.div>
 
