@@ -113,17 +113,85 @@ export default function TermsOfServicePage() {
         App and delete your account at any time.
       </p>
 
-      <h2>11. Changes to These Terms</h2>
+      <h2>11. Dispute Resolution and Binding Arbitration</h2>
+      <p>
+        <strong>
+          Please read this section carefully. It affects your legal rights,
+          including your right to file a lawsuit in court and to have a jury
+          trial.
+        </strong>
+      </p>
+      <p>
+        <strong>Agreement to arbitrate.</strong> You and Toodls agree that
+        any dispute, claim, or controversy arising out of or relating to
+        these Terms or the App will be resolved by final and binding
+        arbitration on an individual basis, rather than in court, except as
+        set out below. This includes, without limitation, any dispute
+        relating to the App&apos;s use of artificial intelligence &mdash; such
+        as AI-generated item identification, condition assessments, resale
+        value or pricing estimates, generated listings, exports, or any
+        output, error, or outcome produced by the App&apos;s automated or
+        AI-driven features.
+      </p>
+      <p>
+        <strong>AI outputs are estimates.</strong> You acknowledge that
+        AI-generated results are estimates and suggestions that may be
+        inaccurate or incomplete, and you agree that any claim based on
+        reliance on such output is subject to this arbitration provision and
+        to the disclaimers and limitations in Sections 2, 8, and 9.
+      </p>
+      <p>
+        <strong>Class action waiver.</strong> You and Toodls agree that each
+        may bring claims against the other only in your or its individual
+        capacity, and not as a plaintiff or class member in any purported
+        class, collective, consolidated, or representative proceeding. The
+        arbitrator may not consolidate more than one person&apos;s claims or
+        preside over any form of class or representative proceeding.
+      </p>
+      <p>
+        <strong>Arbitration process.</strong> The arbitration will be
+        administered by the American Arbitration Association (AAA) under its
+        then-current rules, and may be conducted in person, by documents, by
+        phone, or online. The arbitration will take place in Mecklenburg County,
+        North Carolina, or another mutually agreed location, and will be
+        governed by the Federal Arbitration Act. The
+        arbitrator&apos;s decision will be final and binding and may be
+        entered as a judgment in any court of competent jurisdiction.
+      </p>
+      <p>
+        <strong>Exceptions.</strong> Either party may bring an individual
+        claim in small-claims court, and either party may seek injunctive or
+        equitable relief in court to protect its intellectual property or
+        confidential information. Nothing in this section prevents you from
+        reporting a concern to a government agency.
+      </p>
+      <p>
+        <strong>30-day right to opt out.</strong> You may opt out of this
+        arbitration agreement by sending written notice to{" "}
+        <a href="mailto:contact@toodls.app">contact@toodls.app</a> within 30
+        days of first accepting these Terms. Your notice must include your
+        name and the email associated with your account. If you opt out,
+        neither you nor Toodls will be bound by this arbitration provision.
+      </p>
+      <p>
+        <strong>Governing law.</strong> These Terms and any dispute between
+        you and Toodls will be governed by the laws of the State of North
+        Carolina, without regard to its conflict-of-laws rules, except that
+        the Federal Arbitration Act governs the
+        interpretation and enforcement of the arbitration provision above.
+      </p>
+
+      <h2>12. Changes to These Terms</h2>
       <p>
         We may update these Terms from time to time. Continued use of the
         App after changes take effect constitutes your acceptance of the
         revised Terms.
       </p>
 
-      <h2>12. Contact Us</h2>
+      <h2>13. Contact Us</h2>
       <p>
         If you have questions about these Terms, contact us at{" "}
-        <a href="mailto:support@toodls.app">support@toodls.app</a>.
+        <a href="mailto:contact@toodls.app">contact@toodls.app</a>.
       </p>
     </LegalLayout>
   );

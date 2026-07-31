@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import { CheckCircle2, Send } from "lucide-react";
 
-const SUPPORT_EMAIL = "contact@toodls.com";
+const SUPPORT_EMAIL = "contact@toodls.app";
 
 export default function ContactForm() {
   const [name, setName] = useState("");

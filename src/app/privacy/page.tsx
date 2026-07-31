@@ -75,13 +75,33 @@ export default function PrivacyPolicyPage() {
         </li>
       </ul>
 
-      <h2>4. Photos and On-Device Processing</h2>
+      <h2>4. Use of Artificial Intelligence</h2>
       <p>
-        Photos you scan may be processed by on-device or cloud-based AI
-        models to identify items and estimate value. Photos and item data
-        are stored so you can revisit, edit, and export your listings.
-        You can delete individual items, folders, or your entire account
-        at any time from within the App.
+        Toodls uses artificial intelligence (AI) as a core part of the App.
+        When you scan an item, the photos and related details you provide are
+        processed by on-device and cloud-based AI models to:
+      </p>
+      <ul>
+        <li>Identify the item and recognize its category and condition.</li>
+        <li>Estimate resale value and suggest pricing.</li>
+        <li>
+          Generate listing content such as titles, descriptions, and tags on
+          your behalf.
+        </li>
+        <li>Organize your items and folders.</li>
+      </ul>
+      <p>
+        AI-generated results are estimates and suggestions, and may not always
+        be accurate or complete. You are responsible for reviewing and editing
+        any content before you rely on or publish it. We may use trusted
+        third-party AI providers to perform this processing under
+        confidentiality obligations; these providers process your content only
+        to deliver these features and not to independently market to you.
+      </p>
+      <p>
+        Photos and item data are stored so you can revisit, edit, and export
+        your listings. You can delete individual items, folders, or your entire
+        account at any time from within the App.
       </p>
 
       <h2>5. Data Retention</h2>
@@ -131,7 +151,7 @@ export default function PrivacyPolicyPage() {
       <p>
         If you have questions about this Privacy Policy or our data
         practices, contact us at{" "}
-        <a href="mailto:support@toodls.app">support@toodls.app</a>.
+        <a href="mailto:contact@toodls.app">contact@toodls.app</a>.
       </p>
     </LegalLayout>
   );

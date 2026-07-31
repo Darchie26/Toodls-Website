@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Get in touch with the Toodls team. Send us a message and we'll get back to you.",
 };
 
-const SUPPORT_EMAIL = "contact@toodls.com";
+const SUPPORT_EMAIL = "contact@toodls.app";
 
 export default function ContactPage() {
   return (
