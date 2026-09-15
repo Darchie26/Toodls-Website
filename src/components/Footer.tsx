@@ -49,7 +49,7 @@ export default function Footer() {
                 alt="Toodls"
                 width={1024}
                 height={1024}
-                className="h-16 w-auto"
+                className="h-24 w-auto"
               />
             </Link>
             <p className="mt-4 max-w-[240px] text-sm text-black/50">

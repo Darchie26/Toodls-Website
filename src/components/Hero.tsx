@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Apple, PlayCircle } from "lucide-react";
+import AppStoreBadge from "./AppStoreBadge";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
 export default function Hero() {
@@ -65,31 +65,9 @@ export default function Hero() {
             variants={fadeUp}
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center"
           >
-            <a
-              href="https://apps.apple.com/us/app/toodls-scan-discover-sell/id6783075990"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-2.5 rounded-full bg-black px-7 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.03] active:scale-95"
-            >
-              <Apple className="h-5 w-5" fill="currentColor" />
-              Download on the App Store
-            </a>
-            <button className="flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-black/70 transition-colors hover:text-black">
-              <PlayCircle className="h-5 w-5" strokeWidth={1.75} />
-              Watch Demo
-            </button>
+            <AppStoreBadge href="https://apps.apple.com/us/app/toodls-scan-discover-sell/id6783075990" />
           </motion.div>
 
-          <motion.div
-            variants={fadeUp}
-            className="mt-12 flex items-center justify-center gap-6 text-xs text-black/40 lg:justify-start"
-          >
-            <span>Free to download</span>
-            <span className="h-1 w-1 rounded-full bg-black/20" />
-            <span>Works instantly</span>
-            <span className="h-1 w-1 rounded-full bg-black/20" />
-            <span>No account needed to scan</span>
-          </motion.div>
         </motion.div>
 
         <motion.div
