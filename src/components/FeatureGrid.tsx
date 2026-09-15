@@ -77,7 +77,7 @@ const features: Feature[] = [
 
 export default function FeatureGrid() {
   return (
-    <section id="features" className="relative py-24 sm:py-32">
+    <section className="relative bg-mist py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -87,11 +87,11 @@ export default function FeatureGrid() {
           className="mx-auto max-w-2xl text-center"
         >
           <h2 className="text-balance text-4xl font-extrabold tracking-tight sm:text-5xl">
-            Everything You Need
+            Plus everything else
           </h2>
           <p className="mt-4 text-lg text-black/60">
-            One app to scan, value, organize, and sell — from a single lamp
-            to an entire storage unit.
+            Every tool you need to scan, value, organize, and sell — all in one
+            place.
           </p>
         </motion.div>
 

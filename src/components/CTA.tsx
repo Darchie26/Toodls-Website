@@ -35,7 +35,9 @@ export default function CTA() {
 
           <motion.div variants={fadeUp} className="relative mt-10">
             <a
-              href="#"
+              href="https://apps.apple.com/us/app/toodls-scan-discover-sell/id6783075990"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 rounded-full bg-white px-9 py-4 text-base font-semibold text-black shadow-[0_20px_40px_-12px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.04] active:scale-95"
             >
               <Apple className="h-6 w-6" fill="currentColor" />

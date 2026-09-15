@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import OrganizedSection from "@/components/OrganizedSection";
+import FeatureShowcase from "@/components/FeatureShowcase";
 import FeatureGrid from "@/components/FeatureGrid";
 import Comparison from "@/components/Comparison";
 import SocialProof from "@/components/SocialProof";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <HowItWorks />
         <OrganizedSection />
+        <FeatureShowcase />
         <FeatureGrid />
         <Comparison />
         <SocialProof />

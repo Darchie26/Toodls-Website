@@ -1,10 +1,9 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Apple, PlayCircle } from "lucide-react";
-import PhoneMockup from "./PhoneMockup";
-import ScanScreen from "./screens/ScanScreen";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
 export default function Hero() {
@@ -33,32 +32,33 @@ export default function Hero() {
           variants={staggerContainer(0.12)}
           initial="hidden"
           animate="show"
-          className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left"
+          className="mx-auto max-w-xl text-center lg:mx-0 lg:max-w-2xl lg:text-left"
         >
           <motion.div
             variants={fadeUp}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/60 px-4 py-1.5 text-xs font-semibold text-black/60 backdrop-blur"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            AI-powered item scanning
+            Scan and know what to do with it
           </motion.div>
 
           <motion.h1
             variants={fadeUp}
-            className="text-balance text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl lg:text-[4.2rem]"
+            className="text-balance text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl"
           >
-            Turn Clutter Into{" "}
-            <span className="bg-gradient-to-r from-accent to-accent-dark bg-clip-text text-transparent">
-              Cash
+            <span className="block">Know What You Own.</span>
+            <span className="block bg-gradient-to-r from-accent to-accent-dark bg-clip-text text-transparent">
+              Know What To Do With It.
             </span>
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
-            className="mx-auto mt-6 max-w-md text-balance text-lg text-black/60 lg:mx-0"
+            className="mx-auto mt-6 max-w-lg text-balance text-lg text-black/60 lg:mx-0"
           >
-            Scan unused items, discover what they&apos;re worth, and decide
-            whether to keep, sell, or donate.
+            Scan anything you own to discover its value and decide what to do
+            next. Keep what matters, sell what’s valuable, and donate what you no
+            longer need.
           </motion.p>
 
           <motion.div
@@ -66,7 +66,9 @@ export default function Hero() {
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center"
           >
             <a
-              href="#download"
+              href="https://apps.apple.com/us/app/toodls-scan-discover-sell/id6783075990"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center gap-2.5 rounded-full bg-black px-7 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.03] active:scale-95"
             >
               <Apple className="h-5 w-5" fill="currentColor" />
@@ -95,12 +97,17 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-          className="relative mx-auto"
+          className="relative mx-auto lg:-mt-24"
         >
           <div className="animate-float">
-            <PhoneMockup className="drop-shadow-2xl">
-              <ScanScreen />
-            </PhoneMockup>
+            <Image
+              src="/screenshots/hero-chair.png"
+              alt="Toodls scanning a leather armchair and showing its details"
+              width={1242}
+              height={2688}
+              priority
+              className="mx-auto w-[260px] drop-shadow-2xl sm:w-[300px]"
+            />
           </div>
         </motion.div>
       </div>
